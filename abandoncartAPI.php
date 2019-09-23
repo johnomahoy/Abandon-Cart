@@ -5,8 +5,9 @@ $app = new iSDK;
 
 if( $app->cfgCon("ov677")){ 
 
-//random key = 49ffcabf-f2ed-4ecf-9732-eecd1bd87102
+//generate random key = 49ffcabf-f2ed-4ecf-9732-eecd1bd87102
 
+//Get the Data
 	$email = $_REQUEST['email'];
 	$cartsessionURL = $_REQUEST['cartsessionURL'];
 	$firstname = $_REQUEST['firstname'];
@@ -16,9 +17,10 @@ if( $app->cfgCon("ov677")){
 	$api_key = $_REQUEST['api_key'];
 	$apikey = '49ffcabf-f2ed-4ecf-9732-eecd1bd87102';
   
+	//Check the api key if the same with the data api key from the user.
 	  if($apikey == $api_key AND $orderitem1name != null AND $cartsessionURL != null AND $email != null){
 		  
-		  //
+		  //If the same, get the Contact Id search by email.
 		  $returnFields = array('Id');
 			$data = $app->findByEmail($email, $returnFields);
 			
@@ -59,7 +61,7 @@ if( $app->cfgCon("ov677")){
 					
 				}
 				
-				//insert into the found contact
+				//if contact exist insert into the contact.
 				else{
 					$grp = array('_Orderitem1name'  => $orderitem1name,
 								 '_Orderitem1image'  => $orderitem1imageURL,
