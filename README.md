@@ -12,5 +12,7 @@ These are the expected data from the user: email\
                                           orderitem1imageURL\
                                           api_key / used for validating.
 
+Develop by: Benjie
+
 Check the script for more info.
 
