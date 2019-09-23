@@ -2,7 +2,7 @@
 
 
 
-This script will insert the data into a contact custom field for the AbandonCart.
+This script will insert the data into a contact custom field for the AbandonCart task.
 
 These are the expected data from the user: email\
                                           cartsessionURL\
