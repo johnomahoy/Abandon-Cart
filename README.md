@@ -8,7 +8,7 @@ These are the expected data from the user: email
                                           orderitem1name  
                                           orderitem1imageURL  
                                           api_key / used for validating.  
-
+  
 (1)Received custom api key.
 
       The script will received an custom api key that's already in the script.
